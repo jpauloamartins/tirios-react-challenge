@@ -5,7 +5,7 @@ import { FiChevronDown } from 'react-icons/fi';
 
 export default function HeroSection() {
   return (
-    <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
+    <section className="relative h-screen flex items-center justify-center overflow-hidden">
       <motion.div 
         className="absolute inset-0"
         initial={{ scale: 1.1 }}

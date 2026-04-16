@@ -10,7 +10,7 @@
   }
   
   body {
-    @apply font-sans text-secondary-800 bg-secondary-50;
+    @apply font-sans text-secondary-800 bg-secondary-50 dark:text-secondary-200 dark:bg-secondary-900;
   }
 }
 
@@ -32,6 +32,10 @@
   }
   
   .card {
-    @apply bg-white rounded-lg shadow-md overflow-hidden;
+    @apply bg-white dark:bg-secondary-800 rounded-lg shadow-md overflow-hidden;
   }
+}
+
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
