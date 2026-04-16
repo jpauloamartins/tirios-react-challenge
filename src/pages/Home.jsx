@@ -6,6 +6,8 @@ import { FaWallet, FaStore, FaMoneyBillWave, FaExchangeAlt, FaChartLine, FaLock,
 import { SiEthereum } from 'react-icons/si';
 import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
 
+import HeroSection from '../components/home/sections/HeroSection';
+
 function Home() {
   const [openSections, setOpenSections] = useState({});
 
@@ -214,36 +216,7 @@ function Home() {
 
   return (
     <div className="space-y-16">
-      {/* Hero Section */}
-      <section className="relative h-[600px] flex items-center justify-center">
-        <div className="absolute inset-0 overflow-hidden">
-          <img
-            src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1600&q=80"
-            alt="Hero background"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-black bg-opacity-50" />
-        </div>
-        
-        <div className="relative container text-center text-white space-y-8">
-          <motion.h1 
-            className="text-5xl font-bold"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            Invest and Trade in Real Estate with Cryptocurrency
-          </motion.h1>
-          <motion.p 
-            className="text-xl max-w-2xl mx-auto"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            Own fractional shares of premium properties through NFTs. Start investing with as little as $10.
-          </motion.p>
-        </div>
-      </section>
+      <HeroSection />
       {/* Investment Steps */}
       <section className="container">
         <div className="text-center mb-12">
