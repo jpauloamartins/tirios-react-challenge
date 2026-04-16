@@ -28,7 +28,7 @@
   }
   
   .input {
-    @apply block w-full rounded-md border-secondary-300 shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm;
+    @apply block w-full rounded-md border-secondary-300 dark:border-secondary-600 dark:bg-secondary-700 dark:text-white shadow-sm focus:border-primary-500 focus:ring-primary-500 sm:text-sm;
   }
   
   .card {

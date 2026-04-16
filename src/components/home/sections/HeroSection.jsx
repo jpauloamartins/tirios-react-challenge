@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FaWallet } from 'react-icons/fa';
 import { FiChevronDown } from 'react-icons/fi';
 
 export default function HeroSection() {
@@ -36,7 +35,7 @@ export default function HeroSection() {
             Invest and Trade in <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-primary-200">
             Real Estate
-            </span> with Crypto
+            </span> with Cryptocurrency
           </motion.h1>
           
           <motion.p 
@@ -63,8 +62,7 @@ export default function HeroSection() {
           <button
             className="btn bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white px-8 py-4 text-lg rounded-full transition-all hover:scale-105 flex items-center justify-center"
           >
-            <FaWallet className="mr-2" />
-            Connect Wallet
+            Connect
           </button>
           </motion.div>
         </motion.div>
